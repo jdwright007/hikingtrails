@@ -1,0 +1,50 @@
+
+// Get methods
+
+http://localhost:8080/hikingtrails/getalltrails
+
+http://localhost:8080/hikingtrails/gettrail/1
+
+// Generates HikingTrailNotFoundException(1) if record with id not found
+
+// Post method
+
+http://localhost:8080/hikingtrails/newtrail
+
+// .. data:
+
+{
+    "id": 5,
+    "name": "Middle Fork",
+    "distance": 10.0,
+    "difficulty": "moderate"
+}
+
+// .. data:
+
+// Generates HikingTrailFoundException(3) with record 3 in database
+{
+    "id": 3,
+    "name": "Middle Fork",
+    "distance": 10.0,
+    "difficulty": "moderate"
+}
+
+// Delete method
+
+http://localhost:8080/hikingtrails/deletetrail/1
+
+// Generates HikingTrailNotFoundException(1) with no record with id 1
+
+// Put method
+
+http://localhost:8080/hikingtrails/replacetrail/1
+
+{
+    "id": 1,
+    "name": "Snow Peak",
+    "distance": 8.0,
+    "difficulty": "difficult"
+}
+
+// Generates HikingTrailNotFoundException(1) with no record with id 1
