@@ -31,7 +31,7 @@ import com.hikingtrails.domain.HikingTrail;
 @RunWith(SpringRunner.class)
 @SpringBootTest(classes = HikingtrailsApplication.class,
                 webEnvironment = WebEnvironment.RANDOM_PORT)
-public class HikingTrailIntegrationTests {
+public class HikingTrailsIntegrationTests {
   
     @LocalServerPort
     private int port;

@@ -1,4 +1,4 @@
-
+ 
 package com.hikingtrails.domain;
 
 import java.io.Serializable;
